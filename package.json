@@ -9,9 +9,9 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "server": "json-server --watch db.json --port 3001",
-"test": "vitest",
-"test:run": "vitest run"
-
+    "start": "serve -s dist -1 tcp://0.0.0.0:${PORT:-3000}",
+    "test": "vitest",
+    "test:run": "vitest run"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",
